@@ -1,1 +1,83 @@
-<p>footer works!</p>
+<div class="row  footer-bg">
+  <div class="col-md-4 border-bottom-1 pb-4 text-sm-left text-center">
+    <span class="footer-title">BE THE FIRST TO KNOW</span><!-- footer-title -->
+    <p class="mb-0">Get all the latest information on Triedge Services, Events, Jobs
+      <br class="d-none d-sm-block"> and Fairs, Sign up for our newsletter today.</p>
+  </div><!-- col-4 -->
+  <div class="col-md-4 border-bottom-1">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="d-flex justify-content-center">
+        <input type="email" class="form-control" id="emailInput" placeholder="Email Address"
+          formControlName="emailInput">
+        <i for="emailInput" type="submit" class="fa fa-paper-plane"></i>
+      </div><!-- d-flex -->
+      <div *ngIf="checkSubmit == true" class="ml-5 mt-2 text-red">Enter a valid Email ID</div>
+    </form><!--  -->
+  </div><!-- col-4 -->
+  <div class="col-md-4 border-bottom-1 mt-sm-0 mt-3 justify-content-sm-end justify-content-center">
+    <div class="d-flex justify-content-sm-end flex-md-wrap flex-nowrap flex-lg-nowrap justify-content-center">
+      <div class="social-media-icon mt-2 mt-md-2 mt-lg-0">
+        <img src="../../assets/images/facebook-f.png" alt="Facebook">
+      </div><!-- social-media-icon -->
+      <div class="social-media-icon ml-sm-3 ml-2 mt-2 mt-md-2 mt-lg-0">
+        <img src="../../assets/images/linkedin-in.png" alt="LinkedIn">
+      </div><!-- social-media-icon -->
+      <div class="social-media-icon ml-sm-3 ml-2 mt-2 mt-md-2 mt-lg-0">
+        <img src="../../assets/images/twitter.png" alt="Twitter">
+      </div><!-- social-media-icon -->
+      <div class="social-media-icon ml-sm-3 ml-2 mt-2 mt-md-2 mt-lg-0">
+        <img src="../../assets/images/instagram.png" alt="Instagram">
+      </div><!-- social-media-icon -->
+      <div class="social-media-icon ml-sm-3 ml-2 mt-2 mt-md-2 mt-lg-0">
+        <img src="../../assets/images/whatsapp.png" alt="WhatsApp">
+      </div><!-- social-media-icon -->
+      <div class="social-media-icon ml-sm-3 ml-2 mt-2 mt-md-2 mt-lg-0">
+        <img src="../../assets/images/envelope.png" alt="Gmail">
+      </div><!-- social-media-icon -->
+    </div><!-- social-media-icon-container -->
+
+    <div class="footer-title mt-2 mr-sm-1 text-center text-sm-right">STAY CONNECTED</div>
+  </div><!-- col-4 -->
+
+
+  <div class="col-md-3 text-sm-left text-center mt-5">
+    <img class="d-block mx-sm-0 mx-auto" src="../../assets/images/grey-logo.png" alt="TriEdge Logo">
+    <p class="mb-0">Your one-stop career platform to find Jobs, Internships, Prrofessional Trainings, Projects, and Volunteering Opportunities</p>
+  </div><!-- col-5 -->
+
+  <div class="col-md-3 text-sm-left text-center pr-0 mt-5">
+    <span class="footer-title">QUICK <span class="font-400">LINKS</span></span><!-- footer-title -->
+    <ul>
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Triedge Partners</li>
+      <li>Contact Us</li>
+      <li>Terms &#38; Conditions</li>
+      <li>Privacy Policy</li>
+      <li>Sitemap</li>
+    </ul>
+  </div><!-- col-3 -->
+
+  <div class="col-md-3 text-sm-left text-center pr-0 mt-5">
+    <span class="footer-title">OUR SERVICES</span><!-- footer-title -->
+    <ul>
+      <li>Fresher Jobs</li>
+      <li>InternEdge &#8208; Internships &#38; Projects</li>
+      <li>Resume Edge &#8208; Resume Writing Services</li>
+      <li>Readers Galleria &#8208; Curated Library</li>
+      <li>Trideus &#8208; Campus Ambassadors</li>
+    </ul>
+  </div><!-- col-3 -->
+
+  <div class="col-md-3 text-sm-left text-center pr-0 pl-sm-5 mt-5">
+    <span class="footer-title">TRIEDGE EVENTS</span><!-- footer-title -->
+    <ul>
+      <li>Triedge Events</li>
+      <li>Jobs &#38; Internship Fair 2019</li>
+    </ul>
+  </div><!-- col-3 -->
+
+</div><!-- row footer-bg -->
+<div class="row copyright justify-content-center">
+  &#64;Copyright 2019 &#124; All Rights Reserved by TriEdge Solutions Pvt&#46; Ltd&#46;
+</div><!-- copyright row -->

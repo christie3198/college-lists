@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { jsonArray } from './data';
 
 @Component({
   selector: 'app-main',
@@ -6,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+
+  currentPage = 1;
+  itemsPerPage = 15;
+  maxSize = 5;
+  jsonArray = jsonArray;
 
   constructor() { }
 

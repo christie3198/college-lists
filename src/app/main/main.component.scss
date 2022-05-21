@@ -1,0 +1,177 @@
+@import "../../variables.scss";
+
+.card-banner{
+  border: none;
+  border-top: 100px solid $indigo-dye-color;
+  border-radius: 0px;
+}
+
+.row{
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.img-banner{
+  .card-img-top{
+    height: 210px;
+    object-fit: none;
+  }
+  .banner-tittle{
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 700;
+    color: $jasper-color;
+    padding: 1px 10px;
+    background-color: rgba($white-color, 0.5);
+    border: 1px solid rgba($white-color, 0.5);
+    position: absolute;
+    right: 50px;
+    top: 50px;
+  }
+}
+
+.banner-list-group{
+  flex-direction: row;
+  justify-content: end;
+  padding-right: 10px;
+  align-items: center;
+  box-shadow: 0px 5px 10px -10px rgba($jet-color, 0.5);
+  border: none;
+  border-radius: 0px;
+  .list-group-item{
+    &:hover{
+      background-color: $gainsboro-color;
+      color: $jasper-color;
+      cursor: pointer;
+    }
+    border: none !important;
+    border-radius: 0px;
+    margin: 10px;
+    padding: 5px 10px 7px 10px;
+    font-weight: 700;
+  }
+  .item1, .item2{
+    &::after{
+      content: "";
+      position: absolute;
+      height: 15px;
+      width: 1px;
+      background-color: $gainsboro-color;
+      margin-left: 10px;
+      display: inline-block;
+      top: 11px;
+      right: -11px;
+    }
+  }
+  .list-img1{
+    &:hover{
+      cursor: pointer;
+      opacity: 1;
+    }
+    max-width: 15px;
+    max-height: 15px;
+    opacity: 0.8;
+  }
+  .list-img2{
+    &:hover{
+      cursor: pointer;
+      opacity: 1;
+    }
+    max-width: 20px;
+    max-height: 20px;
+    opacity: 0.6;
+  }
+}
+
+.card > .banner-list-group{
+  border: none;
+}
+
+.sidebar{
+  .title{
+    margin: 2.5rem 0px 15px 25px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .filter-title-card{
+    border-radius: 0px;
+    border: 0;
+    .card-header{
+      padding: 0px;
+      border-left: none;
+      border-right: 1px solid rgba($gainsboro-color, 0.6);
+      border-bottom: 1px solid rgba($gainsboro-color, 0.6);
+      border-top: 1px solid rgba($gainsboro-color, 0.6);
+      background-color: transparent;
+      border-radius: 0px;
+      .filter-title-container{
+        display: flex;
+        align-items: center;
+        .filter-first-half{
+          .filter-title{
+            margin-left: 35px;
+            font-weight: 600;
+            color: $jasper-color;
+            font-family: 'Lato', sans-serif;
+          }
+          .img1{
+            border-right: 1px solid rgba($gainsboro-color, 0.6);
+            max-width: 60px;
+            max-height: 60px;
+            padding: 8px;
+          }
+        }
+        .img2{
+          border-left: 1px solid rgba($gainsboro-color, 0.6);
+          max-width: 60px;
+          max-height: 60px;
+          padding: 18px 17px 17.8px 17px;
+          -webkit-transition: all .01s ease-in-out 0.1s ;
+        }
+      }
+      .filter-title-container[aria-expanded="true"]{
+        .img2{
+          content: url(../../assets/images/red-down-arrow-icon.png);
+        }
+      }
+      .filter-title-container[aria-expanded="false"]{
+        .img2{
+          content: url(../../assets/images/right-arrow-icon.png);
+        }
+      }
+    }
+  }
+}
+
+
+/*Media Queries*/
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .img-banner{
+    .card-img-top{
+      height: 210px;
+      object-fit: cover;
+    }
+    .banner-tittle{
+      right: 20px;
+      top: 30px;
+    }
+  }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+
+ }

@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AngularPaginatorModule } from 'angular-paginator';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,10 @@ import { MainComponent } from './main/main.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AngularPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

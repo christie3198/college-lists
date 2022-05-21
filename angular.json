@@ -32,7 +32,9 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/variables.scss"
+              "src/variables.scss",
+              "src/app/footer/footer.component.scss",
+              "src/app/main/main.component.scss"
             ],
             "scripts": []
           },
