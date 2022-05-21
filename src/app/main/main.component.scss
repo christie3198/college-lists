@@ -118,7 +118,7 @@
           .img1{
             border-right: 1px solid rgba($gainsboro-color, 0.6);
             max-width: 60px;
-            max-height: 60px;
+            min-width: 60px;
             padding: 8px;
           }
         }
@@ -127,17 +127,30 @@
           max-width: 60px;
           max-height: 60px;
           padding: 18px 17px 17.8px 17px;
-          -webkit-transition: all .01s ease-in-out 0.1s ;
         }
       }
       .filter-title-container[aria-expanded="true"]{
         .img2{
           content: url(../../assets/images/red-down-arrow-icon.png);
+          padding: 18px 13px 17.8px 14px;
         }
       }
       .filter-title-container[aria-expanded="false"]{
         .img2{
           content: url(../../assets/images/right-arrow-icon.png);
+        }
+      }
+    }
+    .collapse{
+      .list-group{
+        .list-group-item{
+          &:nth-child(odd){
+            background-color: $cultured-color;
+          }
+          padding: 1px 5px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          border: 1.5px solid $gainsboro-color;
         }
       }
     }
