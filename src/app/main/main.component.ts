@@ -9,7 +9,7 @@ import { jsonArray } from './data';
 export class MainComponent implements OnInit {
 
   currentPage = 1;
-  itemsPerPage = 15;
+  itemsPerPage = 8;
   maxSize = 5;
   jsonArray = jsonArray;
 

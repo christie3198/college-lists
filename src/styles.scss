@@ -20,6 +20,21 @@ body {
   font-weight: 400 !important;
 }
 
+.font-sm{
+  font-size: 0.7rem
+}
+
+.btn-primary{
+  &:hover{
+    background-color: rgba($jasper-color, 0.95);
+    border: none;
+  }
+  background-color: $jasper-color;
+  border-radius: 0px;
+  padding: 1px 10px 4px 10px;
+  border: none;
+}
+
 .live{
   font-family: 'PT Sans', san-serif;
   font-weight: 600;
